@@ -1,0 +1,48 @@
+geometry_msgs/PoseStamped current_pose
+bool current_pose_orientation_unknown
+bool cut_in
+float64 request_length
+float64 point_margin
+uint64[] ignored_ids
+---
+uint8 NORMAL = 0
+uint8 WRONG_ORIENTATION = 1
+uint8 OUT_MAP = 2
+uint8 PARKING_ISLAND = 3
+uint8 current_pose_state
+
+uint8 SUCCEED = 0
+uint8 MISSION_LIST_EMPTY = 1
+uint8 GOAL_UNREACHABLE = 2
+uint8 status
+
+float64 acquired_length
+geometry_msgs/PoseStamped goal_pose
+
+bool left_lane_exist
+bool right_lane_exist
+
+float64 terminal_heading
+
+uint8 CHANGE_LEFT = 1
+uint8 KEEP_CENTER = 2
+uint8 CHANGE_RIGHT = 4
+uint8 CENTER_LEFT = 3
+uint8 CENTER_RIGHT = 6
+uint8 ALL_AVAILABLE = 7
+uint8 guidance
+bool multiple_lane_changes
+
+bool obstacle_avoidance_allowed
+float64 distance_to_stop
+float64 distance_to_goal
+
+uint64 current_wayid
+
+string extra_flags
+
+bool is_left_opposite
+
+bool is_lane_changed
+
+bool is_current_pose_opposite
